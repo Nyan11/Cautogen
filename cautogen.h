@@ -1,7 +1,8 @@
 #ifndef _H_YLG_CATOGEN_
 #define _H_YLG_CATOGEN_
 
-int	get_status(int argv, char **argc);
+int	get_status(int argv, char **argc, int* verbose_level, int* force_level);
+int is_option_present(int argv, char **argc, char *str_option);
 void	show_usage();
 void	to_upper(char* str);
 void	format_time(char *output);
